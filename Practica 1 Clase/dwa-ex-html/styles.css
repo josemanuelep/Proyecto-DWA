@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body{
+  background: yellow;
+  display:  grid;
+  min-height: 100vh;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 4em 1fr 4em;
+  grid-gap: 3em;
+}
+
+.header{
+  background: green;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+}
+
+.main{
+  background: cyan;
+}
+
+.social{
+  background: red;
+}
+
+.footer{
+  background: pink;
+}
