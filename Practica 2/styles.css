@@ -1,33 +1,83 @@
-*,
-*:after,
-*:before{
-  box-sizing: border-box;
-}
-body{
-min-height: 100vh;
-}
-.main-tile{
-  text-align: center;
-  font-weight: 100,
-
-}
-
-#navegador ul{
-  list-style-type: none;
-  text-align: center;
-}
-
-#navegador li{
-  display: inline;
-  text-align: center;
-  margin: 0 10px 0 0;  
-  background-color: #eeeeee;
-
-}
-#navegador li a {
-  padding: 2px 7px 2px 7px;
-  color: #666;
-  background-color: #eeeeee;
-  border: 1px solid #ccc;
-  text-decoration: none;
-}
+        *,
+        *:after,
+        *:before {
+            box-sizing: border-box;
+        }
+        
+        .main-tile {
+            text-align: center;
+            font-weight: 100,
+        }
+        
+        nav {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: #448AFF;
+        }
+        
+        nav ul {
+            margin: 0 auto;
+            width: 940px;
+            list-style: none;
+        }
+        
+        nav ul li {
+            float: left;
+            transition: 0.3s;
+        }
+        
+        nav ul li a {
+            display: block;
+            margin-right: 20px;
+            width: 140px;
+            font-size: 14px;
+            line-height: 44px;
+            text-align: center;
+            text-decoration: none;
+            color: #ccc;
+        }
+        
+        nav ul li a:hover {
+            color: #E91E63;
+        }
+        
+        nav ul li.selected a {
+            color: #E91E63;
+        }
+        
+        li:hover {
+            background-color: #3e8e41;
+            color: white;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-row-gap: 50px;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+            margin-top: 5%;
+        }
+        
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        img {
+            width: 10%;
+            height: 10%;
+        }
+        
+        .table {
+            margin-top: 5%;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border: none;
+        }
